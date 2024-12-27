@@ -1,6 +1,6 @@
 [submodule "trialBlog/public"]
 	path = trialBlog/public
-	url = https://github.com/zbrtsn/zubeyirtosun.github.io.git
+	url = https://github.com/zubeyirtosun/zubeyirtosun.github.io.git
 	branch = main
 [submodule "trialBlog/public2"]
 	path = trialBlog/public2
