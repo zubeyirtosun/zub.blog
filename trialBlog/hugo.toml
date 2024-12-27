@@ -1,7 +1,7 @@
 baseURL = "https://zubeyirtosun.github.io/"
 defaultContentLanguage = "en"
 languageCode = "en"
-title = "Zübeyir Tosun'un Biricik Sitesi"
+title = "Zübeyir Tosun"
 theme = "hugo-blog-awesome"
 
 [params]
