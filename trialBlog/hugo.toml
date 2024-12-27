@@ -1,0 +1,32 @@
+baseURL = "https://zubeyirtosun.github.io/"
+defaultContentLanguage = "en"
+languageCode = "en"
+title = "Zübeyir Tosun'un Biricik Sitesi"
+theme = "hugo-blog-awesome"
+
+[params]
+  goToTop = true
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    [languages.en.params.author]
+      avatar = "profile-pic.png"
+      intro = "Awesome Hugo blog"
+      name = "Zübeyir Tosun"
+      description = "A fast and minimalist Hugo theme with light and dark mode support for personal websites or blogs."
+
+  [languages.it]
+    languageName = "Italiano"
+    weight = 2
+    [languages.it.params.author]
+      avatar = "profile-pic.png"
+      intro = "Awesome Hugo blog"
+      name = "Zübeyir Tosun"
+      description = "Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale."
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/zubeyirtosun"
+
