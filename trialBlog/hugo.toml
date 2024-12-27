@@ -13,16 +13,16 @@ theme = "hugo-blog-awesome"
     weight = 1
     [languages.en.params.author]
       avatar = "profile-pic.png"
-      intro = "Awesome Hugo blog"
+      intro = "Bilgisayar Mühendisliği Öğrencisi"
       name = "Zübeyir Tosun"
-      description = "A fast and minimalist Hugo theme with light and dark mode support for personal websites or blogs."
+      description = "Burayı bir nevi bilgi depomla karışık blog tarzı bir yer halinde kullanmak istiyorum. Herhangi birinin herhangi bir blog'a girdiğinde oradaki uygulamayı tepeden tırnağa anlayacak şekilde yazmak benim bir numaralı hedefim, teşekkürler :)"
 
   [languages.it]
     languageName = "Italiano"
     weight = 2
     [languages.it.params.author]
       avatar = "profile-pic.png"
-      intro = "Awesome Hugo blog"
+      intro = "Computer Engineering Student"
       name = "Zübeyir Tosun"
       description = "Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale."
 
@@ -30,3 +30,6 @@ theme = "hugo-blog-awesome"
 name = "github"
 url = "https://github.com/zubeyirtosun"
 
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/zubeyirtosun/"
