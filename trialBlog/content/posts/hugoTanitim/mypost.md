@@ -1,7 +1,6 @@
 +++
 title = 'Hugo ile Github Blog'
 date = 2024-12-26T19:17:15+03:00
-draft = true
 +++
 
 # Hugo nedir?

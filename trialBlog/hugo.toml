@@ -6,14 +6,16 @@ theme = "hugo-blog-awesome"
 
 [params]
   goToTop = true
+  toc = true
+  tocOpen = false
 
 [languages]
   [languages.en]
     languageName = "English"
     weight = 1
     [languages.en.params.author]
-      avatar = "profile-pic.png"
-      intro = "Bilgisayar Mühendisliği Öğrencisi"
+      avatar = "profile-pic.jpg"
+      intro = "Zübeyir Tosun"
       name = "Zübeyir Tosun"
       description = "Burayı bir nevi bilgi depomla karışık blog tarzı bir yer halinde kullanmak istiyorum. Herhangi birinin herhangi bir blog'a girdiğinde oradaki uygulamayı tepeden tırnağa anlayacak şekilde yazmak benim bir numaralı hedefim, teşekkürler :)"
 
