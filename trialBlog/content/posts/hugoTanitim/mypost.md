@@ -20,7 +20,9 @@ Ben linux kullandığımdan ona göre anlatacağım.
 
 debian tabanlı sistemler için:
 ```bash
-sudo apt install hugo
+sudo apt update -y
+sudo apt install hugo -y
 ```
-Github'ta 2 tane yeni repo açacağız. Biri Blog sitesinin altyapısını oluşturan Hugo dosyalarının tamamını depolayacağımız repo, diğeri ise sadece blog sayfamızın kodunu içerecek ve yayınlayacak repo olacak. Burada şu kısım   
+Github'ta 2 tane yeni repo açacağız. Biri Blog sitesinin altyapısını oluşturan Hugo dosyalarının tamamını depolayacağımız repo, diğeri ise sadece blog sayfamızın kodunu içerecek ve yayınlayacak repo olacak. Burada şu kısım önemli, **[blog-isminiz].github.io** şeklinde yayınlayacağımız adres şeklinde veriyoruz.
 
+Sırasıyla repoları oluşturalım
