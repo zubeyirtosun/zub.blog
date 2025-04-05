@@ -9,6 +9,17 @@ theme = "hugo-blog-awesome"
   toc = true
   tocOpen = false
 
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+        [markup.tableOfContents]
+                startLevel = 1 # ToC starts from H2
+                endLevel = 5 # ToC ends at H4
+                ordered = false # generates <ul> instead of <ol>
+
+
 [languages]
   [languages.en]
     languageName = "English"
@@ -19,14 +30,6 @@ theme = "hugo-blog-awesome"
       name = "Zübeyir Tosun"
       description = "Burayı bir nevi bilgi depomla karışık blog tarzı bir yer halinde kullanmak istiyorum. Herhangi birinin herhangi bir blog'a girdiğinde oradaki uygulamayı tepeden tırnağa anlayacak şekilde yazmak benim bir numaralı hedefim, teşekkürler :)"
 
-  [languages.it]
-    languageName = "Italiano"
-    weight = 2
-    [languages.it.params.author]
-      avatar = "profile-pic.png"
-      intro = "Computer Engineering Student"
-      name = "Zübeyir Tosun"
-      description = "Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale."
 
 [[params.socialIcons]]
 name = "github"
