@@ -103,6 +103,7 @@ Herhangi crowdsec kurulu bir makineyi Crowdsec’in kendi sunduğu web arayüzü
 
      ![crowdsec sec engine örnek foto](/crowdsec-images/crowdsecSecurityEngine.png)
      ![içe aktarma anahtar örneği](/crowdsec-images/crowdsecEnrollCommand.png)
+     kırmızı çizdiğim yer bizim anahtarımız. O sizde ne ise o kullanılacak. Bir tane örnek makine atıldı ve şu şekilde gelmiş oldu, örnek komut:
 
      ```bash
      cscli console enroll --name mintMakinesi --tags denemeTagi cm6ibltpg000nttgmf5saniq9
