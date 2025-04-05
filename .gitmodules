@@ -9,4 +9,7 @@
 [submodule "trialBlog/themes/hugo-blog-awesome"]
     path = trialBlog/themes/hugo-blog-awesome
     url = https://github.com/zubeyirtosun/hugo-blog-awesome.git
+[submodule "trialBlog/themes/hugo-theme-anubis2"]
+    path = trialBlog/themes/hugo-theme-anubis2
+    url = https://github.com/zubeyirtosun/hugo-theme-anubis2.git
 
