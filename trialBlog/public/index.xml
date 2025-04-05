@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zübeyir Tosun</title>
+    <link>https://zubeyirtosun.github.io/</link>
+    <description>Recent content on Zübeyir Tosun</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Apr 2025 13:45:32 +0300</lastBuildDate><atom:link href="https://zubeyirtosun.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bilgi</title>
+      <link>https://zubeyirtosun.github.io/posts/bilgisayaraglariozet/bilgi/</link>
+      <pubDate>Sat, 05 Apr 2025 13:45:32 +0300</pubDate>
+      
+      <guid>https://zubeyirtosun.github.io/posts/bilgisayaraglariozet/bilgi/</guid>
+      
+      <description>&lt;p&gt;Burası derste işlenenlerin kendimce önemli görülen, yazmak istediğim, üşenmediği
+m kısımları bulundurmaktadır. Bir başkasına göre eksiklikler görülebilir ki ben
+bile görüyorum xd&lt;/p&gt;
+&lt;p&gt;tüm özetin esinlendiği ders kaynağı: &lt;a href=&#34;https://ozalpmurat.github.io/BilgisayarAglari-Kitap/02-Topolojiler/&#34;&gt;https://ozalpmurat.github.io/BilgisayarAglari-Kitap/02-Topolojiler/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ağ-topolojileri&#34;&gt;Ağ Topolojileri&lt;/h3&gt;
+&lt;h4 id=&#34;doğrusal-bus-topoloji&#34;&gt;Doğrusal (Bus) Topoloji&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Herkes herkesin trafiğini görebilir kontrol yok.&lt;/li&gt;
+&lt;li&gt;Koaksiyel (televizyon) kablosu kullanılır.&lt;/li&gt;
+&lt;li&gt;Kablonun herhangi bir yerinde sorun olması tüm ağı etkiler.&lt;/li&gt;
+&lt;li&gt;Aynı anda iki bilgisayar veri gönderemez.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;halka-ring-topoloji&#34;&gt;Halka (Ring) Topoloji&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Doğrusal Topoloji&amp;rsquo;nin gelişmişi.&lt;/li&gt;
+&lt;li&gt;Jeton(token) var gideceği yeri biliyor. Herkes veriye ulaşmıyor.&lt;/li&gt;
+&lt;li&gt;Aynı anda iki bilgisayar veri gönderemez.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;yıldız-star-topoloji&#34;&gt;Yıldız (Star) Topoloji&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Klasik Switch özellikleri.&lt;/li&gt;
+&lt;li&gt;Ortada bir dağıtıcı cihaz var.&lt;/li&gt;
+&lt;li&gt;Arıza sadece bulunan bilgisayarı etkiliyor.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;örgü-mesh-topoloji&#34;&gt;Örgü (Mesh) Topoloji&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;O ona, bu buna bağlı.&lt;/li&gt;
+&lt;li&gt;Kablosuz ağlarda da yaygın olarak kullanılır.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;osi-modeli&#34;&gt;OSI Modeli&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://ozalpmurat.github.io/BilgisayarAglari-Kitap/images/B03-OSI_ve_TCPIP.jpg&#34; alt=&#34;&#34;&gt;
+&lt;strong&gt;OSI Modeli&lt;/strong&gt; → Ağ elemanlarının nasıl çalıştığını ve verinin iletimi sırasında hangi işlemlerden geçtiğini kavramak için kullanılan rehberdir.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>CrowdSec Makineler Arasında Güvenli Bağlantı ve Firewall Yapılandırması</title>
+      <link>https://zubeyirtosun.github.io/posts/crowdsec/crowdsec/</link>
+      <pubDate>Mon, 27 Jan 2025 02:48:59 +0300</pubDate>
+      
+      <guid>https://zubeyirtosun.github.io/posts/crowdsec/crowdsec/</guid>
+      
+      <description>&lt;h1 id=&#34;crowdsec-makineler-arasında-güvenli-bağlantı-ve-firewall-yapılandırması&#34;&gt;CrowdSec Makineler Arasında Güvenli Bağlantı ve Firewall Yapılandırması&lt;/h1&gt;
+&lt;h2 id=&#34;crowdsec-iki-makine-arasında-kurulum-ve-yapılandırma&#34;&gt;CrowdSec İki Makine Arasında Kurulum ve Yapılandırma&lt;/h2&gt;
+&lt;h3 id=&#34;çocuk-makine-yapılandırması&#34;&gt;Çocuk Makine Yapılandırması&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;LAPI (Local-API) Bağlantısı Kaydı:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Çocuk makinede aşağıdaki komutu çalıştırın:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ cscli lapi register -u http://&amp;lt;Merkez-Makine-Adresi&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Eğer başarısız olursa, port numarasını ekleyerek tekrar deneyin:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ cscli lapi register -u http://&amp;lt;Merkez-Makine-Adresi&amp;gt;:8080
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Başarılı bir kayıt işlemi sonrasında aşağıdaki çıktıyı görmelisiniz:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;INFO Successfully registered to Local API (LAPI)
+INFO Local API credentials written to &amp;#39;/etc/crowdsec/local_api_credentials.yaml&amp;#39;
+WARN Run &amp;#39;sudo systemctl reload crowdsec&amp;#39; for the new configuration to be effective.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;https://zubeyirtosun.github.io/crowdsec-images/lapiRegister2.png&#34; alt=&#34;çıktı örneği-1&#34;&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Hugo ile Github Blog</title>
+      <link>https://zubeyirtosun.github.io/posts/hugotanitim/mypost/</link>
+      <pubDate>Thu, 26 Dec 2024 19:17:15 +0300</pubDate>
+      
+      <guid>https://zubeyirtosun.github.io/posts/hugotanitim/mypost/</guid>
+      
+      <description>&lt;h1 id=&#34;hugo-nedir&#34;&gt;Hugo nedir?&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, hızlı bir statik site oluşturucu (static site generator) yazılımıdır. Hugo, içerikleri Markdown formatında yazılmış dosyaları alır ve bunları HTML dosyalarına dönüştürerek bir web sitesi oluşturur. Genellikle bloglar, portföy siteleri, belgeler ve diğer içerik odaklı web siteleri için kullanılır.
+Aynı bu okuduğunuz blog da hugo ile tasarlanıp, markdown ile yazımı yapıldı.&lt;/p&gt;
+&lt;p&gt;Hugo&amp;rsquo;yu, özelleştirilebilir temalar ile kurabiliyorsunuz. &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Önceden hazırlanmış temalar&lt;/a&gt;ı kullanarak hızlıca bir site oluşturabilirsiniz. Tabii seçtiğiniz temaları da kendi içinde temayı yazan kişinin verdiği dokümantasyona göre düzenlemeniz gerek.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
