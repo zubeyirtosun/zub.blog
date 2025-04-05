@@ -6,3 +6,7 @@
 	path = trialBlog/public2
 	url = https://github.com/zubeyirtosun/zubeyirtosun.github.io.git
 	branch = main
+[submodule "trialBlog/themes/hugo-blog-awesome"]
+    path = trialBlog/themes/hugo-blog-awesome
+    url = https://github.com/zubeyirtosun/hugo-blog-awesome.git
+
