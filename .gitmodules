@@ -12,4 +12,7 @@
 [submodule "trialBlog/themes/hugo-theme-anubis2"]
     path = trialBlog/themes/hugo-theme-anubis2
     url = https://github.com/zubeyirtosun/hugo-theme-anubis2.git
+[submodule "trialBlog/themes/hugo-theme-stack"]
+    path = trialBlog/themes/hugo-theme-stack
+    url = https://github.com/zubeyirtosun/hugo-theme-stack.git
 
