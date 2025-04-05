@@ -15,4 +15,6 @@
 [submodule "trialBlog/themes/hugo-theme-stack"]
     path = trialBlog/themes/hugo-theme-stack
     url = https://github.com/zubeyirtosun/hugo-theme-stack.git
-
+[submodule "zubeyirtosun.github.io"]
+    path = zubeyirtosun.github.io
+    url = https://github.com/zubeyirtosun/zubeyirtosun.github.io.git
