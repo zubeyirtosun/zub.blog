@@ -1,7 +1,7 @@
 +++
 title = 'Bilgi'
 date = 2025-04-05T13:45:32+03:00
-draft = false
+draft = true
 +++
 
 Burası derste işlenenlerin kendimce önemli görülen, yazmak istediğim, üşenmediği
