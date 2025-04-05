@@ -1,7 +1,7 @@
 {
     "name": "Zübeyir Tosun",
     "short_name": "Zübeyir Tosun",
-    "start_url": "https://zubeyirtosun.github.io/",
+    "start_url": "http://localhost:1313/",
     "theme_color": "#434648",
     "background_color": "#ffffff",
     "display": "standalone",
