@@ -10,6 +10,13 @@ bile görüyorum xd
 
 tüm özetin esinlendiği ders kaynağı: https://ozalpmurat.github.io/BilgisayarAglari-Kitap/02-Topolojiler/
 
+# nasıl kullanılmalı?
+En az bir kez asıl kitabı oku, anlamadığın yer varsa buraya bir bak, farklı şekilde yazmış olabilirim ya da direkt copy paste atmış da olabilirim. Bir kez okuduktan sonra tekrar niyetine buradan göz gezdirilebilir.
+
+---
+
+
+![](https://ozalpmurat.github.io/BilgisayarAglari-Kitap/images/B02-Topolojiler.jpg)
 
 ### Ağ Topolojileri
 #### Doğrusal (Bus) Topoloji
@@ -92,7 +99,10 @@ bağlantı var mı? Paketler kaç milisaniyede gidip geliyor? Büyük paketler
  ve küçük paketler ağdan aynı şekilde gidebiliyor mu?
 * **traceroute (tracert)**: Uzaktaki bir sisteme IP üserinden hangi rotadan gittiğimizi gösterir. ICMP kapalı olan sistemlerde `TCP Trace` denenebilir.
 * **Telnet**: Ağlarda yönetim ve kontrol amaçlı kullanılır. Ağ cihazlarının genellikle tamamı telnet ile yönetimi destekler. Bunun dışında, 2 cihaz arasında 4. katmanda bağlantı (erişebilirlik) kontrolü yapmak için de kullanılır. Örneğin SMTP veya HTTP gibi protokoller, Telnet ile çalıştırılabilir.
-* **netstat** ,**nmap** ,**wireshark** ,**TCPView(Microsoft)...**
+* **netstat**: kullanılan bilgisayarda hangi portların,hizmetlerin açık olduğu görülebilir.
+* **nmap**: herhangi bir ip üzerinde(ağ üzerinde) açık olan portları,hizmetleri görüntüler.
+* **wireshark**: bakılan bilgisayardan gelen ve giden ağ trafiği gözlemlenir. (ekstra bilgi: ethernet kartını okuyarak çalışır.)
+* **TCPView(Microsoft)**
 
 > hedef ip 255.255.255.255 olduğunda **broadcast**(ağdaki herkese) yayın yapar.
 
@@ -108,16 +118,17 @@ düşünebiliriz. Trafik ne kadar fazla olursa olsun, şerit sayısı arttıkça
  trafik sorunsuz ilerleyebilir. Bu kavram doğrudan iletimin hızını ifade
  etmemekte ama dolaylı olarak iletim süresinin kısalmasını 
 sağlamaktadır.  
-* Bir haberleşme sistemi, gönderici, alıcı ve iletim ortamından oluşur. 
-İletim kapasitesi en küçük olan, bütün sistemin bant genişliği belirler.
+* Bir haberleşme sistemi, gönderici, alıcı ve iletim ortamından oluşur.
+**İletim kapasitesi en küçük olan, bütün sistemin bant genişliği belirler.**
 1. Latency (gecikme süresi): Verinin ağ üzerinde aktarımı sırasında geçen süre.
 1. Response time (cevap süresi): Bilgisayarların performansı da dahil edilerek cevap almak için geçen toplam süre.
 1. Throughput (işlem hacmi): Bant genişliği teorik bir kavram iken, 
 işlem hacmi uygulamada görülen gerçek kapasiteyi ifade eder. Anahtar 
-(switch) cihazlarının da işlem kapasitesi bu kavram ile ifade edilir.
+(switch) cihazlarının da işlem kapasitesi bu kavram ile ifade edilir. (şey gibi düşün kutuda 16 megabit yazıyor sana 10 geliyor, 10 görüyorsun.)
 ![](https://ozalpmurat.github.io/BilgisayarAglari-Kitap/images/B04-BantGenisligi02.png)
 
 240 MB (megabayt) —> 240*8 Mb (megabit)
+16 Megabit internetim var diyelim -> saniyede 16/8 yani 2 megabayt saniyede.
 
 **Jitter** —> giden paketlerin arasında sabit bir gecikme olmama durumu. 
 ![](https://ozalpmurat.github.io/BilgisayarAglari-Kitap/images/B04-Jitter.png)
@@ -125,16 +136,23 @@ işlem hacmi uygulamada görülen gerçek kapasiteyi ifade eder. Anahtar
 
 
 
-**QoS** (quality of service) —> bantgenişliğini duruma göre öncelik vermek üzere yapılandırma.
+**QoS** (quality of service) —> bant genişliğini duruma göre öncelik vermek üzere yapılandırma.
 ![](https://ozalpmurat.github.io/BilgisayarAglari-Kitap/images/B04-QoS.png)
 
 
 ---
+
 Bu haftayı kaçırdım (malum minibüs olayı)
+
 ---
 
 ## Yerel Ağlar (LAN/VLAN)
 ethernet protokolü **802.3** standardını kullanılır.
+
+> vlan atamaları **802.1q** ethernet standardı ile geldi. **Dot1q** olarak da bilinir. 
+
+> 802.11 -> ev ve işyerlerinde en çok kullanılan, bilgisayar, yazıcı gibi cihazların birbirleri ile kablosuz olarak haberleşme standardı(wifi standardı).
+
 ##### ARP 
 * IP adresini MAC adresine çevirir.
 * ARP tablosu ağdaki cihazların MAC adresini tutar.
@@ -159,12 +177,13 @@ soru-2
 1.1- hub → A pc & B pc
 1.2- hub → C pc & D pc & E pc
 
-> Yayın mesajını router durdurur, keser.
+> Yayın mesajını(tüm ağa gönderilen mesajı) router durdurur, keser.
 
 > uplink portu: Anahtar üzerinde pc’lerin haricinde dış dünya ile iletişim kurmak için bağlantı yapılan porta "uplink" portu denir.
 
 ##### Ağ Geçidi (Gateway)
 Ağ geçidi, bir ağın dışarı açılan kapısıdır.
+İnternete çıkılan kapı.
 
 ##### Alt Ağa Bölme Yöntemleri
 **klasik yöntem**de fiziksel olarak bir cihaz koyup kablo çekerek bölme,
@@ -181,24 +200,29 @@ her anahtarda sanal ağlar tanımlanmaz.  Tanımlananlara yönetilebilir anahtar
 ![](https://ozalpmurat.github.io/BilgisayarAglari-Kitap/images/B06-VLAN_Anahtar.png)
 > Aynı VLAN numarasına sahip portlar aynı sanal ağa aittir.
 
-**trunk (tagged) port**
-**access (untagged) port**
+**trunk (tagged) port**: bir switch'teki bağlantıyı başka bir switch'e bağlantı verirken kullanılır. Genelde bilgisayarın bağlanması için kullanılmaz.
 
-> layer 3 switch, yönlendirebilen switch'tir.
+**access (untagged) port**: Bilgisayarın bağlanması, internete sahip olması için açılan portlar.
+
+ünide kullanım şekli: eğer bir switch'ten başka switch'e internet aktaracaksak trunk port ayarlarız, eğer ünide lab'taki bir pc kullanacaksa access port ayarlarız.
+
+> layer(katman) 3 switch, yönlendirebilen switch'tir.
 layer 2 switch, yönlendiremeyen switch'tir.
 
 
 #### Anahtar Kullanım Mimarisi
 ![](https://ozalpmurat.github.io/BilgisayarAglari-Kitap/images/B06-AnahtarMimarisi.png)
-1. Omurga (core)
+1. Omurga (core):
 en çok ağır yüke giren switch, trafiğe maruz kalan katman
-1. Dağıtım (distrubution) Katmanı
+1. Dağıtım (distrubution) Katmanı:
 chill takılan rahat trafiği bulunan omurga ile binalar arası iletişimi veren katman
-1. Kenar  (access)
+1. Kenar  (access):
 son kullanıcıyla etkileşime girip trafiğe sahip olan katman
 
 önemli bir foto:
 ![](https://ozalpmurat.github.io/BilgisayarAglari-Kitap/images/B06-InterVLAN_Routing.png)
+açıklamak gerekirse: C'de layer 3 switch var yani yönlendirebilen. Diğerleri yönlendirilemeyen layer 2 switch.
+A'da nasıl switch direkt yönlendiremese de router'da belirli ayarlar yaparak yönlendirme işlemi yapılabiliyor.
 
 ## IP
 
@@ -209,31 +233,42 @@ ilk üç sınıfı (A,B,C) aralığını ezberle! (first octet decimal range)
 
 ##### Özel ve genel IP Adresleri
 10.0.0.0/8
+
 172.16.0.0/12
+
 192.168.0.0/16
+
 NAT(Network Address Translation) içerisinde kullanılan IP adresleri
+
 > NAT : kendi içerisinde ağın aldığı IP. Dışarıya çıktığında herkes tek veya birden fazla(nasıl ayarlanmışsa) IP kullanabilir.
+
 > 168.254.0.0/16  —> IP aralığı, Windows'ta eğer bilgisayar IP alamazsa bunu otomatik olarak alıyor. Yani IP alamadığının göstergesi.
 
 ##### Diğer ayrılmış IP adres aralıkları
 0.0.0.0/8
+
 127.0.0.0/8
+
 169.254.0.0/16
 
 
 ---
+
 Cuma derse katılmadım. (diş kontrolüne gidildi.)
+
 ---
 
 > IP sayısı ve host sayısı;
-	Host tanımlayıcısı kısmındaki bit sayısı ile elde edilebilecek adres sayısı, o ağda kullanılabilecek IP adresi sayısıdır. Her ağın ilk IP  adresi `ağ adresi` ve son IP adresi de `yayın adresi` olarak kullanıldığından, her ağda kullanılabilecek **host sayısı IP sayısından 2 eksiktir**.
+	Host tanımlayıcısı kısmındaki bit sayısı ile elde edilebilecek adres sayısı, o ağda kullanılabilecek IP adresi sayısıdır. Her ağın ilk IP  adresi `ağ adresi` ve son IP adresi de `yayın adresi` olarak kullanıldığından, **her ağda kullanılabilecek host sayısı IP sayısından 2 eksiktir**.
 
 
 > Ağ maskesi herhangi bir IP adresi ile ikilik sistemde çarpılırsa (mantıksal `VE` işlemi) çıkan sonuç **ağın adresi**ni verir. Bu sayede, ağın nerede başladığı bulunmuş olur.
 
 
 her ağ için;
+
 ilk ip: ağ adresi
+
 son ip: yayın adresi
 
 
@@ -268,7 +303,7 @@ son ip: yayın adresi
 			ağ adresi: 10.0.1.128  —> 10/000000
 			yayın adresi: 10.0.1.191 —> 10/111111
 
-	> how we can do this all:
+	> how can we do this all:
 	örnek: 10.0.1.123/16     ağ maskesini, ağ adresini ve yayın adresini bulun.
 
 	maske: 255.255.0.0
