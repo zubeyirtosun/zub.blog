@@ -6,7 +6,84 @@
     <description>Recent content in Posts on Zübeyir Tosun</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 17 Apr 2025 10:53:34 +0300</lastBuildDate><atom:link href="https://zubeyirtosun.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Jun 2025 18:23:42 +0300</lastBuildDate><atom:link href="https://zubeyirtosun.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ozet</title>
+      <link>https://zubeyirtosun.github.io/posts/yazilim-m%C3%BChendisligi-ozet/ozet/</link>
+      <pubDate>Mon, 23 Jun 2025 18:23:42 +0300</pubDate>
+      
+      <guid>https://zubeyirtosun.github.io/posts/yazilim-m%C3%BChendisligi-ozet/ozet/</guid>
+      
+      <description>&lt;h1 id=&#34;-yazılım-mühendisliği-ders-notları&#34;&gt;📚 Yazılım Mühendisliği Ders Notları&lt;/h1&gt;
+&lt;h2 id=&#34;-içindekiler&#34;&gt;📋 İçindekiler&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://zubeyirtosun.github.io/posts/yazilim-m%C3%BChendisligi-ozet/ozet/#1-yaz%c4%b1l%c4%b1ma-giri%c5%9f&#34;&gt;Yazılıma Giriş&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zubeyirtosun.github.io/posts/yazilim-m%C3%BChendisligi-ozet/ozet/#2-yaz%c4%b1l%c4%b1m-ya%c5%9fam-d%c3%b6ng%c3%bcs%c3%bc&#34;&gt;Yazılım Yaşam Döngüsü&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zubeyirtosun.github.io/posts/yazilim-m%C3%BChendisligi-ozet/ozet/#3-%c3%a7evik-yaz%c4%b1l%c4%b1m-geli%c5%9ftirme&#34;&gt;Çevik Yazılım Geliştirme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zubeyirtosun.github.io/posts/yazilim-m%C3%BChendisligi-ozet/ozet/#4-sistem-%c3%a7%c3%b6z%c3%bcmleme-ve-gereksinim-m%c3%bchendisli%c4%9fi&#34;&gt;Sistem Çözümleme ve Gereksinim Mühendisliği&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zubeyirtosun.github.io/posts/yazilim-m%C3%BChendisligi-ozet/ozet/#5-yaz%c4%b1l%c4%b1m-modelleme&#34;&gt;Yazılım Modelleme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zubeyirtosun.github.io/posts/yazilim-m%C3%BChendisligi-ozet/ozet/#6-yaz%c4%b1l%c4%b1m-mimarileri&#34;&gt;Yazılım Mimarileri&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zubeyirtosun.github.io/posts/yazilim-m%C3%BChendisligi-ozet/ozet/#7-yaz%c4%b1l%c4%b1m-tasar%c4%b1m%c4%b1&#34;&gt;Yazılım Tasarımı&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zubeyirtosun.github.io/posts/yazilim-m%C3%BChendisligi-ozet/ozet/#8-yaz%c4%b1l%c4%b1m-yap%c4%b1m%c4%b1ger%c3%a7ekle%c5%9ftirimi&#34;&gt;Yazılım Yapımı/Gerçekleştirimi&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1--yazılıma-giriş&#34;&gt;1. 💻 Yazılıma Giriş&lt;/h2&gt;
+&lt;h3 id=&#34;-yazılım-nedir&#34;&gt;🎯 Yazılım Nedir?&lt;/h3&gt;
+&lt;p&gt;Bir bilgisayarda donanıma hayat veren belirli bir işi yapması için derlenmiş komutların bütünüdür.&lt;/p&gt;
+&lt;h3 id=&#34;-iyi-bir-yazılımın-özellikleri&#34;&gt;✅ İyi Bir Yazılımın Özellikleri&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;🎯 Doğruluk&lt;/strong&gt;: Program yapması gereken işi tam ve hatasız bir şekilde yapabilmelidir&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;👤 Kolay Kullanım&lt;/strong&gt;: Kullanıcılar fazla yardım almadan kolayca kullanabilmelidir&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🎨 Basitlik&lt;/strong&gt;: Arayüz mümkün olduğunca sade ve basit olmalıdır&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🔄 Uyumluluk&lt;/strong&gt;: Sistemin üst versiyonlarında da çalışabilmelidir&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;📦 Taşınabilirlik&lt;/strong&gt;: Farklı donanımlarda kullanılabilmelidir&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;♻️ Tekrar kullanılabilirlik&lt;/strong&gt;: Farklı projelerde kullanılabilmelidir&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-yazılım-türleri&#34;&gt;🏗️ Yazılım Türleri&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;⚙️ Sistem Yazılımı&lt;/strong&gt;: İşletim sistemleri, derleyiciler&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🔬 Mühendislik/Bilimsel Yazılım&lt;/strong&gt;: Hesaplama ve analiz&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🌐 Ağ Uygulamaları&lt;/strong&gt;: İnternet tabanlı hizmetler&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🏢 Şirket Yazılımı&lt;/strong&gt;: Kurumsal iş süreçleri&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🔧 Gömülü Yazılım&lt;/strong&gt;: Gerçek zamanlı sistemler&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🤖 Yapay Zeka Yazılımları&lt;/strong&gt;: Makine öğrenimi, uzman sistemler&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;📚 Eski (Legacy) Yazılım&lt;/strong&gt;: Uzun süredir kullanılan sistemler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-yazılım-geliştirme-süreci&#34;&gt;🔄 Yazılım Geliştirme Süreci&lt;/h3&gt;
+&lt;h4 id=&#34;ana-aşamalar&#34;&gt;Ana Aşamalar:&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;📊 Gereksinim Analizi&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🎨 Tasarım&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;💻 Kodlama&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🧪 Test&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;🔧 Bakım&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;destekleyici-işlemler&#34;&gt;Destekleyici İşlemler:&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;📋 Proje yönetimi&lt;/li&gt;
+&lt;li&gt;⚠️ Risk yönetimi&lt;/li&gt;
+&lt;li&gt;📝 Belgelendirme&lt;/li&gt;
+&lt;li&gt;👥 Teknik gözden geçirme&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;-çevik-yazılım&#34;&gt;⚡ Çevik Yazılım&lt;/h3&gt;
+&lt;p&gt;Proje küçük yinemelere ayırılır ve her parça ayrı bir proje gibi işlenir. &lt;strong&gt;Amaç&lt;/strong&gt;: Hızlı proje çıkartmak.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://zubeyirtosun.github.io/posts/crowdseckurulum/blog/</link>
+      <pubDate>Sun, 27 Apr 2025 16:11:01 +0300</pubDate>
+      
+      <guid>https://zubeyirtosun.github.io/posts/crowdseckurulum/blog/</guid>
+      
+      <description>&lt;h1 id=&#34;crowdsece-giriş-ve-kullanım-rehberi&#34;&gt;Crowdsec&amp;rsquo;e Giriş ve Kullanım Rehberi&lt;/h1&gt;
+&lt;p&gt;Bu yazıda, Crowdsec&amp;rsquo;in ne olduğunu, nasıl çalıştığını ve temel kullanım senaryolarını ele alacağım. Ayrıca bir video ödevim için bu yazıyı referans alarak Crowdsec&amp;rsquo;i tanıtacağım. Haydi başlayalım!&lt;/p&gt;
+&lt;h2 id=&#34;crowdsec-nedir-ve-ne-yapar&#34;&gt;Crowdsec Nedir ve Ne Yapar?&lt;/h2&gt;
+&lt;p&gt;Crowdsec, açık kaynaklı bir &lt;strong&gt;güvenlik çözümüdür&lt;/strong&gt; ve temel olarak sistemlerinizi kötü niyetli aktivitelerden korumayı amaçlar. Geleneksel bir güvenlik duvarından farklı olarak, Crowdsec &lt;strong&gt;davranış analizi&lt;/strong&gt; yapar ve topluluk tarafından paylaşılan tehdit istihbaratını kullanarak saldırıları tespit eder ve engeller. IP adreslerini banlama, şüpheli aktiviteleri izleme ve sistemlerinizi koruma gibi işlevleri vardır. Kısacası, Crowdsec hem bireysel hem de toplu bir savunma mekanizması sunar.&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>CrowdSec Makineler Arasında Güvenli Bağlantı ve Firewall Yapılandırması</title>
       <link>https://zubeyirtosun.github.io/posts/crowdsec/crowdsec/</link>
