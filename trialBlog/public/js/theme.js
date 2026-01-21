@@ -72,6 +72,4 @@
             area.classList.remove("blurry");
         });
     });
-
-
 })();

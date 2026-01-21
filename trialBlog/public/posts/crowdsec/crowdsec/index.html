@@ -68,40 +68,36 @@
     </script>
 
 
-<meta name="generator" content="Hugo 0.143.1">
+<meta name="generator" content="Hugo 0.123.7">
 
     
-    <meta property="og:url" content="https://zubeyirtosun.github.io/posts/crowdsec/crowdsec/">
-  <meta property="og:site_name" content="Zübeyir Tosun">
-  <meta property="og:title" content="CrowdSec Makineler Arasında Güvenli Bağlantı ve Firewall Yapılandırması">
-  <meta property="og:description" content="CrowdSec Makineler Arasında Güvenli Bağlantı ve Firewall Yapılandırması CrowdSec İki Makine Arasında Kurulum ve Yapılandırma Çocuk Makine Yapılandırması LAPI (Local-API) Bağlantısı Kaydı:
+    <meta property="og:title" content="CrowdSec Makineler Arasında Güvenli Bağlantı ve Firewall Yapılandırması" />
+<meta property="og:description" content="CrowdSec Makineler Arasında Güvenli Bağlantı ve Firewall Yapılandırması CrowdSec İki Makine Arasında Kurulum ve Yapılandırma Çocuk Makine Yapılandırması LAPI (Local-API) Bağlantısı Kaydı:
 Çocuk makinede aşağıdaki komutu çalıştırın:
 $ cscli lapi register -u http://&lt;Merkez-Makine-Adresi&gt; Eğer başarısız olursa, port numarasını ekleyerek tekrar deneyin:
 $ cscli lapi register -u http://&lt;Merkez-Makine-Adresi&gt;:8080 Başarılı bir kayıt işlemi sonrasında aşağıdaki çıktıyı görmelisiniz:
-INFO Successfully registered to Local API (LAPI) INFO Local API credentials written to &#39;/etc/crowdsec/local_api_credentials.yaml&#39; WARN Run &#39;sudo systemctl reload crowdsec&#39; for the new configuration to be effective.">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-01-27T02:48:59+03:00">
-    <meta property="article:modified_time" content="2025-01-27T02:48:59+03:00">
+INFO Successfully registered to Local API (LAPI) INFO Local API credentials written to &#39;/etc/crowdsec/local_api_credentials.yaml&#39; WARN Run &#39;sudo systemctl reload crowdsec&#39; for the new configuration to be effective." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zubeyirtosun.github.io/posts/crowdsec/crowdsec/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-01-27T02:48:59+03:00" />
+<meta property="article:modified_time" content="2025-01-27T02:48:59+03:00" />
+
 
 
     
-    
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="CrowdSec Makineler Arasında Güvenli Bağlantı ve Firewall Yapılandırması">
-  <meta name="twitter:description" content="CrowdSec Makineler Arasında Güvenli Bağlantı ve Firewall Yapılandırması CrowdSec İki Makine Arasında Kurulum ve Yapılandırma Çocuk Makine Yapılandırması LAPI (Local-API) Bağlantısı Kaydı:
+    <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="CrowdSec Makineler Arasında Güvenli Bağlantı ve Firewall Yapılandırması"/>
+<meta name="twitter:description" content="CrowdSec Makineler Arasında Güvenli Bağlantı ve Firewall Yapılandırması CrowdSec İki Makine Arasında Kurulum ve Yapılandırma Çocuk Makine Yapılandırması LAPI (Local-API) Bağlantısı Kaydı:
 Çocuk makinede aşağıdaki komutu çalıştırın:
 $ cscli lapi register -u http://&lt;Merkez-Makine-Adresi&gt; Eğer başarısız olursa, port numarasını ekleyerek tekrar deneyin:
 $ cscli lapi register -u http://&lt;Merkez-Makine-Adresi&gt;:8080 Başarılı bir kayıt işlemi sonrasında aşağıdaki çıktıyı görmelisiniz:
-INFO Successfully registered to Local API (LAPI) INFO Local API credentials written to &#39;/etc/crowdsec/local_api_credentials.yaml&#39; WARN Run &#39;sudo systemctl reload crowdsec&#39; for the new configuration to be effective.">
+INFO Successfully registered to Local API (LAPI) INFO Local API credentials written to &#39;/etc/crowdsec/local_api_credentials.yaml&#39; WARN Run &#39;sudo systemctl reload crowdsec&#39; for the new configuration to be effective."/>
 
 
     
 
     <link rel="canonical" href="https://zubeyirtosun.github.io/posts/crowdsec/crowdsec/">
     <link href="/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
-    <link href="/code-highlight.min.e665c234b194586418d5a15a6ede28c31cd6f23505b905e35c459e0d321e0058.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
     
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
@@ -118,6 +114,7 @@ INFO Successfully registered to Local API (LAPI) INFO Local API credentials writ
 <meta name="msapplication-config" content="/browserconfig.xml">
 <meta name="msapplication-TileColor" content="#2d89ef">
 <meta name="theme-color" content="#434648">
+    <meta name="color-scheme" content="light dark">
 
     
     <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
@@ -224,7 +221,7 @@ stroke-linejoin="round" class="feather feather-home">
 <pre tabindex="0"><code>INFO Successfully registered to Local API (LAPI)
 INFO Local API credentials written to &#39;/etc/crowdsec/local_api_credentials.yaml&#39;
 WARN Run &#39;sudo systemctl reload crowdsec&#39; for the new configuration to be effective.
-</code></pre><p><img src="/crowdsec-images/lapiRegister2.png" alt="çıktı örneği-1"></p>
+</code></pre><p><img alt="çıktı örneği-1" src="/crowdsec-images/lapiRegister2.png"></p>
 </li>
 </ul>
 </li>
@@ -240,7 +237,7 @@ WARN Run &#39;sudo systemctl reload crowdsec&#39; for the new configuration to b
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ cscli machines validate &lt;makine-ismi&gt;
 </span></span></code></pre></div></li>
 </ul>
-<p><img src="/crowdsec-images/machinesList.png" alt="aktif makine liste örneği"></p>
+<p><img alt="aktif makine liste örneği" src="/crowdsec-images/machinesList.png"></p>
 </li>
 </ol>
 <h3 id="firewall-bağlantısı">Firewall Bağlantısı</h3>
@@ -251,7 +248,7 @@ WARN Run &#39;sudo systemctl reload crowdsec&#39; for the new configuration to b
 <li>
 <p>Ana makinede bir bouncer oluşturun:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ cscli bouncers add &lt;bouncer-adı&gt;
-</span></span></code></pre></div><p><img src="/crowdsec-images/bouncerAdd.png" alt="oluşmuş API key örneği"></p>
+</span></span></code></pre></div><p><img alt="oluşmuş API key örneği" src="/crowdsec-images/bouncerAdd.png"></p>
 </li>
 <li>
 <p>Oluşturulan API key’i çocuk makinesindeki <code>/etc/crowdsec/bouncers/crowdsec-firewall-bouncer.yaml</code> dosyasına ekleyin:</p>
@@ -278,7 +275,7 @@ WARN Run &#39;sudo systemctl reload crowdsec&#39; for the new configuration to b
 </li>
 <li>
 <p>Opnsense üzerinde Crowdsec kısmı ayarları uygun şekilde yapılandırılmalıdır:</p>
-<p><img src="/crowdsec-images/opnsenseCrowdsec.png" alt="opnsense crowdsec plugin ayarı örneği"></p>
+<p><img alt="opnsense crowdsec plugin ayarı örneği" src="/crowdsec-images/opnsenseCrowdsec.png"></p>
 </li>
 </ul>
 </li>
@@ -293,8 +290,8 @@ WARN Run &#39;sudo systemctl reload crowdsec&#39; for the new configuration to b
 <p>Öncelikle <a href="https://app.crowdsec.net/security-engines">Crowdsec Security Engines</a> üzerinde, Crowdsec kurulu makinede aşağıdaki komut ile bağlantıyı sağlayın:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cscli console enroll --name &lt;instance_name&gt; --tags &lt;tag_1&gt; --tags &lt;tag_2&gt; &lt;ENROLL-KEY&gt;
 </span></span></code></pre></div><p>Buradaki <code>ENROLL-KEY</code>, <code>enroll command</code> kısmından alınır. Örneğin:</p>
-<p><img src="/crowdsec-images/crowdsecSecurityEngine.png" alt="crowdsec sec engine örnek foto">
-<img src="/crowdsec-images/crowdsecEnrollCommand.png" alt="içe aktarma anahtar örneği">
+<p><img alt="crowdsec sec engine örnek foto" src="/crowdsec-images/crowdsecSecurityEngine.png">
+<img alt="içe aktarma anahtar örneği" src="/crowdsec-images/crowdsecEnrollCommand.png">
 kırmızı çizdiğim yer bizim anahtarımız. O sizde ne ise o kullanılacak. Bir tane örnek makine atıldı ve şu şekilde gelmiş oldu, örnek komut:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cscli console enroll --name mintMakinesi --tags denemeTagi cm6ibltpg000nttgmf5saniq9
 </span></span></code></pre></div></li>
@@ -302,7 +299,7 @@ kırmızı çizdiğim yer bizim anahtarımız. O sizde ne ise o kullanılacak. B
 <p>Şimdi bunu panelden onaylamanız gerekmektedir. Bu işlemler sonunda artık makinenizi görebilmelisiniz.</p>
 </li>
 </ul>
-<p><img src="/crowdsec-images/acceptingEnroll.png" alt="onaylama örneği"></p>
+<p><img alt="onaylama örneği" src="/crowdsec-images/acceptingEnroll.png"></p>
 </li>
 </ol>
 <h3 id="uyarılar-ve-ekstra-bilgiler">Uyarılar ve Ekstra Bilgiler</h3>
@@ -323,11 +320,6 @@ kırmızı çizdiğim yer bizim anahtarımız. O sizde ne ise o kullanılacak. B
 <footer class="footer">
     <span class="footer_item"> </span>
     &nbsp;
-
-    
-    
-
-    
 
     <div class="footer_social-icons">
 <a href="https://github.com/zubeyirtosun" target="_blank" rel="noopener noreferrer me"
@@ -350,7 +342,7 @@ kırmızı çizdiğim yer bizim anahtarımız. O sizde ne ise o kullanılacak. B
 </a>
 </div>
     <small class="footer_copyright">
-        © 2025 Zübeyir Tosun.
+        © 2026 Zübeyir Tosun.
         
     </small>
 </footer><a href="#" title="" id="totop">
